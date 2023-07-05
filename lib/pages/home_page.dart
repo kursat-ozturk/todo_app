@@ -77,23 +77,23 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: const Color(0xff0D0D16),
       appBar: AppBar(
-        title: const Text(
-          'TO DO',
-          style: TextStyle(color: Color(0xffF4F4FB)),
+        title: Image.asset(
+          'assets/todo_logo.png',
+          fit: BoxFit.contain,
+          height: 250,
         ),
         centerTitle: true,
-        elevation: 2,
-        shadowColor: Colors.blue,
         backgroundColor: const Color(0xff0D0D16),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
         child: const Icon(
           Icons.add,
-          color: Color(0xff0D0D16),
+          color: Colors.white,
         ),
-        backgroundColor: const Color.fromARGB(255, 143, 243, 215),
+        backgroundColor: Colors.blue[900],
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: ListView.builder(
         itemCount: db.toDoList.length,
         itemBuilder: (context, index) {

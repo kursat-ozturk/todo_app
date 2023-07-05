@@ -34,7 +34,7 @@ class ToDoTile extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(24),
           decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 143, 243, 215),
+            color: Colors.black,
             borderRadius: BorderRadius.circular(12),
             boxShadow: const [
               BoxShadow(
@@ -51,15 +51,17 @@ class ToDoTile extends StatelessWidget {
                 value: taskCompleted,
                 onChanged: onChanged,
                 activeColor: const Color(0xff0D0D16),
+                side: BorderSide(color: Colors.white),
               ),
 
               //task name
               Text(
                 taskName,
                 style: TextStyle(
+                  letterSpacing: 2,
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
-                  color: const Color(0xff0D0D16),
+                  color: Colors.white,
                   decoration: taskCompleted
                       ? TextDecoration.lineThrough
                       : TextDecoration.none,
