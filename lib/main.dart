@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_app/pages/splash_page.dart';
 
-import 'pages/home_page.dart';
-
 void main() async {
   // init the hive
   await Hive.initFlutter();

@@ -13,7 +13,7 @@ class ToDoSplash extends StatelessWidget {
     });
 
     return Scaffold(
-      backgroundColor: Color(0xff0D0D16),
+      backgroundColor: const Color(0xff0D0D16),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,7 +24,7 @@ class ToDoSplash extends StatelessWidget {
               height: 500,
               fit: BoxFit.contain,
             ),
-            SizedBox(
+            const SizedBox(
               width: 50,
               height: 50,
               child: CircularProgressIndicator(
